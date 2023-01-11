@@ -1,0 +1,31 @@
+.c-card-project {
+  position: relative;
+  border-radius: 1em;
+  border: 4px #F8F7F9 solid;
+  overflow: hidden;
+  cursor: pointer;
+  width: 250px;
+  transition: width 0.5s;
+}
+.c-card-project--reduced {
+  width: 150px;
+}
+
+.c-card-project__overlay-name-project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00000099;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: center ;
+}
+
+.u-show-project {
+  opacity: 1;
+}

@@ -1,0 +1,60 @@
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  min-height: 100vh;
+  padding: 0 1em;
+  margin: auto;
+  background-color: #1F1F1F;
+}
+
+.navbar,
+.navbar__text-container,
+.navbar__list,
+.navbar__cv {
+  display: flex;
+}
+
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  color: #F8F7F9;
+}
+
+.navbar__logo-container {
+  cursor: pointer;
+}
+
+.navbar__text-container {
+  gap: 4em;
+  align-items: center;
+}
+
+.navbar__list {
+  gap: 2em;
+}
+
+.navbar_list-item {
+  cursor: pointer;
+}
+
+.navbar__cv {
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+.fa-arrow-down {
+  font-size: 0.9rem;
+}
+
+.routes-container-body {
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 2em;
+  color: #F8F7F9;
+}

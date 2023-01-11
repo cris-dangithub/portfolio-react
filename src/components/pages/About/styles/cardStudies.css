@@ -1,0 +1,31 @@
+.c-card-studies {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8em;
+  padding: 1em;
+  width: 200px;
+  text-align: center;
+  border-radius: 1em;
+  border: 4px #F8F7F9 dashed;
+  background-color: #f8f7f921;
+}
+
+
+.card-studies__image {
+  justify-self: center;
+  width: auto;
+  height: 80px;
+}
+
+.card-studies__title {
+  font-size: 1rem;
+}
+
+.card-studies__list {
+  display: grid;
+  gap: 0.4em;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}

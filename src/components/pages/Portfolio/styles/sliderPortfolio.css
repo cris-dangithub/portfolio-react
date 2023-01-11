@@ -1,0 +1,46 @@
+:root {
+  --width-slider: 700px;
+  --width-slider-btns: 20px
+}
+
+.c-slider-portfolio {
+  display: grid;
+  grid-template-columns: 1fr var(--width-slider) 1fr;
+  grid-template-rows: 1fr 40px;
+  /* overflow: hidden; */
+}
+
+.slider-portfolio__btn-header {
+  /* background-color: red; */
+  position: relative;
+  z-index: 100;
+}
+
+.slider-portfolio__header {
+  width: 100%;
+}
+
+.slider-portfolio__main-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, var(--width-slider));
+
+}
+.slider-portfolio__btn-header {
+  font-size: 4rem;
+  align-self: center;
+  transition: color 0.3s;
+}
+.slider-portfolio__btn-header:hover {
+  color: #ff9595;
+}
+.slider-portfolio__btn-header:active {
+  transform: scale(0.9);
+}
+
+
+/*  */
+.slider-portfolio__footer {
+  grid-column: span 3;
+  background-color: blue;
+}

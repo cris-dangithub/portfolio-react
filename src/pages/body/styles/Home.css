@@ -1,0 +1,83 @@
+.c-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.home__left-content {
+  position: relative;
+  z-index: 3000;
+  align-self: center;
+  display: grid;
+  gap: 0.5em;
+}
+
+.home__title {
+  font-size: 2rem;
+}
+
+.home__sub-title {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+
+.home__greeting {
+  margin-top: 0.5em;
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+.home__btn {
+  margin-top: 1em;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.home__right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__image-circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: #f8f7f9 4px dashed;
+  overflow: hidden;
+  animation: background-hunch 1.5s infinite;
+  z-index: 2000;
+}
+
+.home__image {
+  position: absolute;
+  top: -1.5em;
+  right: 0;
+  z-index: 1000;
+}
+
+.home__network-list {
+  display: flex;
+  gap: 1.2em;
+}
+
+.home__network-item {
+  font-size: 2.5rem;
+}
+
+@keyframes background-hunch {
+  0% {
+    box-shadow: 0px 0px 20px 5px #f8f7f938;
+  }
+
+  50% {
+    box-shadow: 0px 0px 20px 5px #f8f7f962;
+  }
+
+  100% {
+    box-shadow: 0px 0px 20px 5px #f8f7f938;
+  }
+} 
