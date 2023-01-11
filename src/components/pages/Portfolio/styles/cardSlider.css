@@ -6,14 +6,15 @@
   gap: 1em;
   -webkit-filter: blur(0);
   filter: blur(0);
-  transition: -webkit-filter 0.4s;
-  transition: filter 0.4s;
-  transition: filter 0.4s, -webkit-filter 0.4s
+  transition: filter 0.4s, -webkit-filter 0.4s, transform 0.4s;
+  transform: translateY(-2%);
+
 }
 
 .c-card-slider--inactive {
   -webkit-filter: blur(4px);
   filter: blur(4px);
+  transform: translateY(5%);
 }
 
 .card-slider__video-container {
