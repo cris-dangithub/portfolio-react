@@ -38,7 +38,7 @@
 }
 
 .portfolio__list {
-  grid-template-columns: repeat(auto-fit, 250px);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-content: center;
   gap: 1em;
   transition: justify-content 0.5s;
@@ -47,7 +47,6 @@
 .portfolio__list--reduced {
   grid-template-columns: repeat(auto-fit, 150px);
   justify-content: flex-start;
-
 }
 
 .portfolio__modal {
@@ -84,23 +83,6 @@
   position: absolute;
   z-index: 2000;
 }
-
-/* .overlay-slider-left {
-  backdrop-filter: blur(4px);
-  left: -1px;
-  top: 0;
-  bottom: 0;
-  width: 5%;
-} */
-
-/* .overlay-slider-right {
-  backdrop-filter: blur(4px);
-  right: -1px;
-  top: 0;
-  bottom: 0;
-  width: 8%;
-} */
-
 
 .portfolio__close-modal {
   position: absolute;

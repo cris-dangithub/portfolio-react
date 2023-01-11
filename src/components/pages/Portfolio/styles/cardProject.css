@@ -4,7 +4,7 @@
   border: 4px #F8F7F9 solid;
   overflow: hidden;
   cursor: pointer;
-  width: 250px;
+  /* width: 250px; */
   transition: width 0.5s;
 }
 .c-card-project--reduced {

@@ -54,8 +54,6 @@ const Portfolio = () => {
       </main>
       <article className={`portfolio__modal ${modalShowed ? 'portfolio__modal--showed' : ''}`} style={objStyleModalContainer}>
         <div className="portfolio__modal-content">
-          <div className="overlay-slider-left"></div>
-          <div className="overlay-slider-right"></div>
           <h2 className='portfolio__close-modal' onClick={handleCloseModal}><i className="fa-solid fa-circle-xmark"></i></h2>
           <SliderPortfolio
             currentProject={currentProject}
