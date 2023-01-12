@@ -69,6 +69,9 @@ video {
   border-radius: 10px;
   transition: background-color 0.3s, color 0.3s;
 }
+.u-button--active {
+  background-color: #f8f7f933;
+}
 
 .u-button:hover {
   background-color: #F8F7F9;
