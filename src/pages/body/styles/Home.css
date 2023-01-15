@@ -139,6 +139,8 @@
   .home__image-circle {
     width: 150px;
     height: 150px;
+    border: #f8f7f9 3px dashed;
+
   }
 
   .home__network-list {
