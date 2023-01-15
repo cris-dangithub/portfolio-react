@@ -7,6 +7,7 @@
 
 body {
   margin: 0;
+  background-color: #1F1F1F;
 }
 
 h1,
@@ -50,30 +51,39 @@ video {
 }
 
 #root {
+  position: relative;
   background-color: #1F1F1F;
+  overflow: hidden;
 }
 
 .u-inactive {
   opacity: 0;
   transform: translateX(-5%);
 }
+
 .u-inactive--right {
   opacity: 0;
   transform: translateX(5%);
 }
 
 .u-button {
+  position: relative;
+  z-index: 900;
   color: #F8F7F9;
+  background-color: #1F1F1F;
   padding: 0.2em 1em;
   border: #F8F7F9 solid 3px;
   border-radius: 10px;
   transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
 }
+
 .u-button--active {
   background-color: #f8f7f933;
 }
 
-.u-button:hover {
+.u-button:hover,
+.u-button:active {
   background-color: #F8F7F9;
   color: #1F1F1F;
 }

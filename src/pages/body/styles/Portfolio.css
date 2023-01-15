@@ -50,7 +50,7 @@
 }
 
 .portfolio__modal {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -67,15 +67,18 @@
 }
 
 .portfolio__modal-content {
-  width: 90%;
-  height: 70%;
+  margin: 0 1em;
+  width: 950px;
+  aspect-ratio: 1.4;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 3em;
-  background-color: #252525;
+  border-radius: 30px;
   overflow: hidden;
+  /*  */
+  background-color: #252525;
+  /* #252525; */
 }
 
 .overlay-slider-left,
@@ -94,4 +97,45 @@
   border-radius: 50%;
   cursor: pointer;
   color: #F8F7F9;
+}
+
+
+@media (max-width: 1000px) {
+  .portfolio__modal-content {
+    width: 650px;
+  }
+}
+
+@media (max-width: 730px) {
+  .portfolio__title {
+    font-size: 2.5rem;
+  }
+
+  .portfolio__modal-content {
+    width: 600px;
+  }
+}
+
+@media (max-width: 650px) {
+  .portfolio__modal-content {
+    width: 500px;
+    aspect-ratio: 0.7;
+  }
+  .portfolio__close-modal {
+    font-size: 4rem;
+    right: 0.2em;
+    top: 0.2em;
+  }
+}
+
+@media (max-width: 450px) {
+  .portfolio__modal-content {
+    width: 300px;
+    aspect-ratio: 0.5;
+  }
+  .portfolio__close-modal {
+    font-size: 2rem;
+    right: 0.7em;
+    top: 0.7em;
+  }
 }

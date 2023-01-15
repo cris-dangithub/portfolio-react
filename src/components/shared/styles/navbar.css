@@ -1,0 +1,129 @@
+.navbar,
+.navbar__text-container,
+.navbar__list,
+.navbar__cv {
+  display: flex;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 20000;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  color: #F8F7F9;
+}
+
+.navbar__logo-container {
+  cursor: pointer;
+}
+
+.navbar__show-menu-btn {
+  display: none;
+  background-color: #575757;
+}
+
+.navbar__text-container {
+  gap: 4em;
+  align-items: center;
+  transition: transform 0.4s;
+}
+
+.navbar__text-container-close {
+  display: none !important;
+}
+
+.navbar__list {
+  gap: 2em;
+}
+
+.navbar_list-item {
+  cursor: pointer;
+}
+
+.navbar__cv {
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+.navbar__cv--mobile {
+  display: none;
+  font-size: 1.1rem;
+}
+
+.navbar__right-container-mobile {
+  display: none;
+  /* display: flex;
+  gap: 1.2em; */
+}
+
+.fa-arrow-down {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 730px) {
+  .navbar__show-menu-btn {
+    font-size: 1.5rem;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar__text-container {
+    position: fixed;
+    z-index: 20000;
+    background-color: #f8f7f95b;
+    color: #1F1F1F;
+    font-weight: 800;
+    font-size: 1.6rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 3em;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transform: translateY(100%);
+  }
+
+  .navbar__text-container--open {
+    transform: translateY(0);
+  }
+
+  .navbar__text-container-close {
+    position: absolute;
+    top: 1.2em;
+    right: 1.2em;
+    display: block !important;
+    cursor: pointer;
+  }
+
+  .navbar__list {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 1.5em;
+  }
+
+
+  .navbar__cv {
+    display: none;
+  }
+
+  .navbar__cv--mobile {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  .navbar__right-container-mobile {
+    display: flex;
+    gap: 1.2em;
+  }
+}

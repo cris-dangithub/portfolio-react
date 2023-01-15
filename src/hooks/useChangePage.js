@@ -21,7 +21,6 @@ const useChangePage = () => {
     timeTransition,
     dispatch,
     navigate,
-
   }
 }
 

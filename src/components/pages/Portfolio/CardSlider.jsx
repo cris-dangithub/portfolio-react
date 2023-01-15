@@ -5,9 +5,9 @@ const CardSlider = ({ idx, project, currentProject }) => {
 
   return (
     <section className={`c-card-slider ${idx === currentProject ? '' : 'c-card-slider--inactive'}`}>
-      <aside className='card-slider__video-container'>
-        <div className="card-slider__phone-border-container">
-          <img className='card-slider__phone-border' src="/img/Portfolio/phone-container.png" alt="" />
+      <aside className='card-slider__left-content'>
+        <div className="card-slider__video-container">
+
           <video className='card-slider__video' muted controls>
             <source src={project.video} />
             Su navegador no soporta este formato de video

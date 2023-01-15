@@ -1,5 +1,6 @@
 .c-card-project {
   position: relative;
+  z-index: 900;
   border-radius: 1em;
   border: 4px #F8F7F9 solid;
   overflow: hidden;

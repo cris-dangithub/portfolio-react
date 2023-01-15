@@ -1,6 +1,9 @@
 .c-card-technologies {
   position: relative;
+  z-index: 900;
   background-color: #f8f7f960;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   border-radius: 1em;
   width: 120px;
   aspect-ratio: 1;
@@ -10,12 +13,14 @@
   overflow: hidden;
   cursor: pointer;
 }
+
 .card-technologies__image {
   position: relative;
   z-index: 1000;
   width: 70%;
   transition: transform 1s;
 }
+
 .c-card-technologies:hover .card-technologies__image {
   transform: rotateY(360deg);
 }

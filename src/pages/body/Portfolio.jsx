@@ -20,7 +20,7 @@ const Portfolio = () => {
   const timeTranslationSeconds = 0.4
   const objStyleModalContainer = {
     transition: `opacity ${timeTranslationSeconds}s`,
-    zIndex: zIndexModalActive ? 10000 : -10
+    zIndex: zIndexModalActive ? 21000 : -10
   }
   const handleCloseModal = () => {
     setModalShowed(false)
