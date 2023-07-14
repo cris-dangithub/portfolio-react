@@ -22,7 +22,7 @@ const Navbar = () => {
           <li className='navbar_list-item' onClick={() => handleChangeSection('/')}>Home</li>
           <li className='navbar_list-item' onClick={() => handleChangeSection('/about')}>About</li>
           <li className='navbar_list-item' onClick={() => handleChangeSection('/portfolio')}>Portfolio</li>
-          {/* <li className='navbar_list-item' onClick={() => handleChangeSection('/contact')}>Contact</li> */}
+          <li className='navbar_list-item' onClick={() => handleChangeSection('/contact')}>Contact</li>
         </ul>
         <a
           className='navbar__cv u-button'
