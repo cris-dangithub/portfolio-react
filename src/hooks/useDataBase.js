@@ -116,10 +116,32 @@ const useDataBase = () => {
     }
 
   ]
+
+  const contactMe = [
+    // Nombre completo
+    {
+      title: "Name",
+      placeholder: "Tell me your name"
+    },
+    // Email
+    {
+      type: "email",
+      title: "Email",
+      placeholder: "¿What is your email?"
+    },
+    // Mensaje
+    {
+      textarea: true,
+      title: "Message",
+      placeholder: "¿Why are you contacting me?"
+    }
+
+  ]
   return {
     technologies,
     education,
-    myPortfolio
+    myPortfolio,
+    contactMe
   }
 }
 

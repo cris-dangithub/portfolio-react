@@ -50,6 +50,21 @@ video {
   display: block;
 }
 
+
+input,
+textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+textarea {
+  resize: vertical;
+
+}
+
 #root {
   position: relative;
   background-color: #1F1F1F;
