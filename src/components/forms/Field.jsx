@@ -1,8 +1,7 @@
 import React from "react";
 import "./styles/Field.css";
-import { useForm } from "react-hook-form";
 
-const Field = ({ infoProps = {}, register }) => {
+const Field = ({ infoProps = {}, register, errors }) => {
   const { type = "text", title = "Title", textarea, placeholder } = infoProps;
   return (
     <div className="c-field">
@@ -11,17 +10,21 @@ const Field = ({ infoProps = {}, register }) => {
         <input
           id={title.toLowerCase()}
           type={type}
-          className="field__input"
+          className={`
+            field__input ${errors[title.toLowerCase()] && "field--animated"}
+          `}
           placeholder={placeholder}
-          {...register(title.toLowerCase())}
+          {...register(title.toLowerCase(), { required: true })}
         />
       ) : (
         <textarea
           id={title.toLowerCase()}
           rows="10"
-          className="field__textarea"
+          className={`
+            field__textarea ${errors[title.toLowerCase()] && "field--animated"}
+          `}
           placeholder={placeholder}
-          {...register(title.toLowerCase())}
+          {...register(title.toLowerCase(), { required: true })}
         ></textarea>
       )}
     </div>
